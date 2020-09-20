@@ -16,7 +16,7 @@ class DisplayStudents extends Component {
     };
   }
   componentDidMount() {
-    fetch("/api/students")
+    fetch("http://35.232.157.38/api/students")
       .then((res) => res.json())
       .then((students) => this.setState({ students: students }));
   }

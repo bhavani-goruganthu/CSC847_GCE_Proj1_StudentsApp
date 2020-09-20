@@ -33,14 +33,14 @@ class StudentAddForm extends Component {
   }
 
   componentDidMount() {
-    fetch("/api/students/id")
+    fetch("http://35.232.157.38/api/students/id")
       .then((res) => res.json())
       .then((studentID) => this.setState({ studentID: studentID + 1 }))
       .catch((err) => console.error(err));
   }
 
   componentDidUpdate() {
-    fetch("/api/students/id")
+    fetch("http://35.232.157.38/api/students/id")
       .then((res) => res.json())
       .then((studentID) => this.setState({ studentID: studentID + 1 }))
       .catch((err) => console.error(err));

@@ -29,7 +29,7 @@ class SearchStudents extends Component {
       alert("Enter atleast one search parameter..");
     } else {
       fetch(
-        `/api/students/search?studentID=${this.state.studentId}&firstName=${this.state.firstName}&lastName=${this.state.lastName}`
+        `http://35.232.157.38/api/students/search?studentID=${this.state.studentId}&firstName=${this.state.firstName}&lastName=${this.state.lastName}`
       )
         .then((res) => res.json())
         .then((filteredStudents) =>
