@@ -20,6 +20,7 @@ let con = mysql.createConnection({
 });
 con.connect(function (err) {
   if (err) throw err;
+	else
   console.log("Connected to mySQL database..!!");
 });
 
@@ -29,6 +30,7 @@ app.get("/api/students", async (req, res) => {
     if (err) throw err;
     res.json(result);
   });
+	console.log("Display Students");
 });
 let insertedId = 0;
 app.get("/api/students/add", async (req, res) => {
@@ -77,4 +79,4 @@ app.get("/api/students/search", async (req, res) => {
 });
 
 const port = 5000;
-app.listen(port, () => `Server running on port ${port}`);
+app.listen(port, () => console.log(`Server running on port ${port}`));
