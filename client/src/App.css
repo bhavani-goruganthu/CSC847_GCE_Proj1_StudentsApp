@@ -16,7 +16,7 @@ header {
   font-size: 45px;
   padding-top: 10px;
   text-align: center;
-  text-decoration: underline;
+  /* text-decoration: underline; */
 }
 .rounded-circle {
   margin-right: 20px;
