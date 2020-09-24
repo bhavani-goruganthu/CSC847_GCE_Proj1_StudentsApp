@@ -12,7 +12,7 @@ function Header() {
           width="180"
           height="100"
         />
-        Student Management
+        Student Directory
       </header>
     </div>
   );

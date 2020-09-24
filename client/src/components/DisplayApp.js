@@ -10,7 +10,7 @@ class DisplayApp extends Component {
     this.state = {
       bodycontent1: "Welcome!!",
       bodycontent2:
-        "You can Add a student, Search for students and Display all students using this website",
+        "You can Add a student, Search for students and List all students using this website",
       studentlist: [],
       studentaddform: "",
       searchscreen: "",
@@ -25,7 +25,7 @@ class DisplayApp extends Component {
     this.setState({
       bodycontent1: "Welcome!!",
       bodycontent2:
-        "You can Add a student, Search for students and Display all students using this website",
+        "You can Add a student, Search for students and List all students using this website",
       studentlist: [],
       studentaddform: "",
       searchscreen: "",
