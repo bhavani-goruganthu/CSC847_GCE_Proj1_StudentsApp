@@ -18,6 +18,7 @@ let con = mysql.createConnection({
   password: "Bhavani@123",
   database: "studentsdata",
 });
+
 con.connect(function (err) {
   if (err) throw err;
 	else
